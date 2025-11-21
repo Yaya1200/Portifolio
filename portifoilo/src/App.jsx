@@ -5,12 +5,12 @@ import './App.css'
 
 function App() {
   return (
-    <div className='buttons'>
+   <div className="flex float-right">
    <button>Hero</button>
    <button>about</button>
    <button>education</button>
    <button>skills</button>
-   <buttton>contact</buttton>
+   <button>contact</button>
    </div>
   )
 }
