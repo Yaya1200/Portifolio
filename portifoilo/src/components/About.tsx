@@ -28,7 +28,7 @@ export function About() {
 
   return (
     <section id="about" className="relative py-24 overflow-hidden">
-      {/* Background Elements */}
+      
       <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950" />
       
       <div className="relative max-w-7xl mx-auto px-6">
@@ -48,7 +48,6 @@ export function About() {
             Passionate about creating exceptional digital experiences
           </p>
         </motion.div>
-
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -57,11 +56,27 @@ export function About() {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/20 to-blue-500/20 group-hover:opacity-0 transition-opacity duration-300" />
-            
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="relative inline-block group" style={{marginLeft:"100px"}}>
+              <img
+                src="./yaredImage.jpg"
+                className="w-24 h-24 object-cover rounded-2xl "
+                style={{
+                  width:"400px",
+                  height:"350px",
+                  
+                }}
+                alt="Yared"
+              />
+
               <div className="absolute inset-0 border-2 border-cyan-500/50 rounded-2xl group-hover:border-cyan-400 transition-colors" />
             </div>
+          </motion.div>
           </motion.div>
 
           <motion.div
@@ -86,13 +101,13 @@ export function About() {
             <div className="flex gap-4">
               <div className="text-center">
                 <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                  5+
+                  2+
                 </div>
                 <div className="text-sm text-slate-400">Years Experience</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                  50+
+                  20+
                 </div>
                 <div className="text-sm text-slate-400">Projects Completed</div>
               </div>
