@@ -41,7 +41,7 @@ export function Navigation({ activeSection }: NavigationProps) {
           {`<Y/>`}
         </motion.div>
 
-        {/* Desktop Navigation */}
+        
         <div className="hidden md:flex items-center gap-8">
           {navItems.map((item, index) => (
             <motion.button
@@ -67,7 +67,6 @@ export function Navigation({ activeSection }: NavigationProps) {
           ))}
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden text-white p-2"
@@ -76,7 +75,7 @@ export function Navigation({ activeSection }: NavigationProps) {
         </button>
       </div>
 
-      {/* Mobile Navigation */}
+      
       <AnimatePresence>
         {isOpen && (
           <motion.div
