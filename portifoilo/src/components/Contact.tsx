@@ -1,6 +1,10 @@
 import { motion } from 'motion/react';
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
+
+
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -10,19 +14,31 @@ export function Contact() {
   });
 
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle');
+  const formRef = useRef<HTMLFormElement>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus('sending');
-    
-    
-    setTimeout(() => {
-      setStatus('sent');
-      setFormData({ name: '', email: '', message: '' });
-      setTimeout(() => setStatus('idle'), 3000);
-    }, 1500);
-  };
+ const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  if (!formRef.current) return;
 
+  setStatus('sending');
+
+  try {
+    await emailjs.sendForm(
+      "service_m3anxhj",  
+      "template_9yputtj", 
+      formRef.current,
+      "8Lz11mVTgGTKOk9eF"   
+    );
+
+    setStatus('sent');
+    formRef.current.reset();
+
+    setTimeout(() => setStatus('idle'), 3000);
+  } catch (error) {
+    console.error(error);
+    setStatus('idle');
+  }
+};
   const contactInfo = [
     {
       Icon: Mail,
@@ -144,7 +160,7 @@ export function Contact() {
           >
             <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-2xl blur-xl" />
             <div className="relative p-8 bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl group-hover:border-cyan-500/50 transition-all">
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2" >
                     Name
@@ -152,6 +168,7 @@ export function Contact() {
                   <input
                     type="text"
                     id="name"
+                    name="from_name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     required
@@ -167,6 +184,7 @@ export function Contact() {
                   <input
                     type="email"
                     id="email"
+                    name="from_email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     required
@@ -181,6 +199,7 @@ export function Contact() {
                   </label>
                   <textarea
                     id="message"
+                    name="message"
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     required
