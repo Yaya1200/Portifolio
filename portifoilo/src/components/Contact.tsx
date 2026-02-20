@@ -15,7 +15,7 @@ export function Contact() {
     e.preventDefault();
     setStatus('sending');
     
-    // Simulate sending
+    
     setTimeout(() => {
       setStatus('sent');
       setFormData({ name: '', email: '', message: '' });
@@ -27,19 +27,19 @@ export function Contact() {
     {
       Icon: Mail,
       label: 'Email',
-      value: 'hello@developer.com',
-      href: 'mailto:hello@developer.com',
+      value: 'yaredgebre120@gmail.com',
+      href: 'mailto:yaredgebre120@gmail.com',
     },
     {
       Icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+251942750305',
+      href: 'tel:+251942750305',
     },
     {
       Icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Addis Ababa, Ethiopia',
       href: '#',
     },
   ];
@@ -48,7 +48,7 @@ export function Contact() {
     <section id="contact" className="relative py-24 overflow-hidden">
       <div className="absolute inset-0 bg-slate-950" />
       
-      {/* Background Elements */}
+      
       <motion.div
         animate={{
           scale: [1, 1.2, 1],
@@ -81,7 +81,7 @@ export function Contact() {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Info */}
+      
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -130,23 +130,11 @@ export function Contact() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="relative group"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-2xl blur-xl" />
-              <div className="relative p-6 bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl">
-                <h4 className="text-white font-semibold mb-2">Availability</h4>
-                <p className="text-slate-300 text-sm mb-3">
-                  I'm currently available for freelance projects and full-time opportunities.
-                </p>
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                  <span className="text-green-400 text-sm font-medium">
-                    Available for work
-                  </span>
-                </div>
-              </div>
+             
             </motion.div>
           </motion.div>
 
-          {/* Contact Form */}
+         
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -158,7 +146,7 @@ export function Contact() {
             <div className="relative p-8 bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl group-hover:border-cyan-500/50 transition-all">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2" >
                     Name
                   </label>
                   <input
@@ -223,7 +211,6 @@ export function Contact() {
           </motion.div>
         </div>
 
-        {/* Footer */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -231,7 +218,7 @@ export function Contact() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-20 pt-8 border-t border-slate-800 text-center text-slate-400"
         >
-          <p>© 2026 Portfolio. Designed & Built with passion.</p>
+          <p>© 2026 Yared Gebre. Designed & Built with passion.</p>
         </motion.div>
       </div>
     </section>
