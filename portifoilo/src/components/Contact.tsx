@@ -32,6 +32,7 @@ export function Contact() {
 
     setStatus('sent');
     formRef.current.reset();
+    setFormData({name:"", email:"", message:""})
 
     setTimeout(() => setStatus('idle'), 3000);
   } catch (error) {
