@@ -6,37 +6,29 @@ export function Skills() {
     {
       title: 'Frontend',
       skills: [
-        { name: 'React / Next.js', level: 95 },
-        { name: 'TypeScript', level: 90 },
-        { name: 'Tailwind CSS', level: 95 },
-        { name: 'Vue.js', level: 85 },
+        { name: 'Html5' },
+        { name: 'Css3' },
+        { name: 'React' },
+        { name: 'Next.js' },
+        { name: 'TypeScript' },
+        { name: 'Tailwind CSS' },
       ],
     },
     {
       title: 'Backend',
       skills: [
-        { name: 'Node.js / Express', level: 90 },
-        { name: 'Python / Django', level: 80 },
-        { name: 'PostgreSQL', level: 85 },
-        { name: 'MongoDB', level: 88 },
-      ],
-    },
-    {
-      title: 'Mobile',
-      skills: [
-        { name: 'React Native', level: 85 },
-        { name: 'Flutter', level: 75 },
-        { name: 'iOS / Swift', level: 70 },
-        { name: 'Android / Kotlin', level: 72 },
+        { name: 'Node.js / Express'},
+        { name: 'PostgreSQL'},
+        { name: 'MongoDB' },
       ],
     },
     {
       title: 'Tools & Others',
       skills: [
-        { name: 'Git / GitHub', level: 95 },
-        { name: 'Docker', level: 80 },
-        { name: 'AWS / Cloud', level: 85 },
-        { name: 'Figma / Design', level: 88 },
+        { name: 'Git / GitHub'},
+        { name: 'Docker'},
+        { name: 'AWS / Cloud' },
+        { name: 'Figma / Design' },
       ],
     },
   ];
@@ -83,9 +75,7 @@ export function Skills() {
                     <SkillBar
                       key={skillIndex}
                       name={skill.name}
-                      level={skill.level}
-                      delay={categoryIndex * 0.1 + skillIndex * 0.05}
-                    />
+                      delay={categoryIndex * 0.1 + skillIndex * 0.05}/>
                   ))}
                 </div>
               </div>
@@ -93,7 +83,7 @@ export function Skills() {
           ))}
         </div>
 
-        {/* Additional Technologies */}
+    
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -109,12 +99,9 @@ export function Skills() {
               </h3>
               <div className="flex flex-wrap justify-center gap-3">
                 {[
-                  'GraphQL',
                   'REST APIs',
                   'WebSockets',
                   'Redux',
-                  'Jest',
-                  'Cypress',
                   'CI/CD',
                   'Agile',
                   'Scrum',
@@ -145,11 +132,10 @@ export function Skills() {
 
 interface SkillBarProps {
   name: string;
-  level: number;
   delay: number;
 }
 
-function SkillBar({ name, level, delay }: SkillBarProps) {
+function SkillBar({ name, delay }: SkillBarProps) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -178,28 +164,8 @@ function SkillBar({ name, level, delay }: SkillBarProps) {
     <div id={`skill-${name}`}>
       <div className="flex justify-between mb-2">
         <span className="text-slate-300 font-medium">{name}</span>
-        <span className="text-cyan-400 font-medium">{level}%</span>
       </div>
-      <div className="h-2 bg-slate-700 rounded-full overflow-hidden">
-        <motion.div
-          initial={{ width: 0 }}
-          animate={{ width: isVisible ? `${level}%` : 0 }}
-          transition={{ duration: 1, delay, ease: 'easeOut' }}
-          className="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full relative overflow-hidden"
-        >
-          <motion.div
-            animate={{
-              x: ['-100%', '100%'],
-            }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              ease: 'linear',
-            }}
-            className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
-          />
-        </motion.div>
-      </div>
+      
     </div>
   );
 }
