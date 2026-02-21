@@ -22,7 +22,7 @@ export function Projects() {
     description:
       "Blog platform with user authentication, post creation, editing and dynamic content rendering.",
     image: "https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=800&q=80",
-    tags: ["JavaScript", "HTML", "CSS"],
+    tags: ["JavaScript", "HTML", "CSS", "Node.js", "Express.js", "Mongodb", "Postgres", "REST Api"],
     githubLink: "https://github.com/Yaya1200/my-blog-with-next",
   },
   {
@@ -31,7 +31,7 @@ export function Projects() {
     description:
       "Secure note-taking system with CRUD functionality and user-based data management.",
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
-    tags: ["JavaScript", "HTML", "CSS"],
+    tags: ["JavaScript", "HTML", "CSS", "Node.js", "Express.js", "Mongodb", "Postgres", "REST Api"],
     githubLink: "https://github.com/Yaya1200/My-Full-Stack-App",
   },
   {
@@ -49,7 +49,7 @@ export function Projects() {
     description:
       "Real-time weather application using external API integration with dynamic UI updates.",
     image: "https://images.unsplash.com/photo-1614480633894-f3b7f4bb0e76?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    tags: ["JavaScript", "API", "CSS"],
+    tags:["JavaScript", "HTML", "CSS", "Node.js", "Express.js", "Mongodb", "Postgres", "REST Api"],
     githubLink: "https://github.com/Yaya1200/Wheather-App",
   },
   {
@@ -76,7 +76,7 @@ export function Projects() {
     description:
       "Task management application with full CRUD operations and local storage persistence.",
     image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800&q=80",
-    tags: ["JavaScript", "HTML", "CSS"],
+    tags: ["JavaScript", "HTML", "CSS", "Node.js", "Express.js", "Mongodb", "Postgres", "REST Api"],
     githubLink: "https://github.com/Yaya1200/todo-list",
   },
   {
@@ -85,7 +85,7 @@ export function Projects() {
     description:
       "Productivity planner application with authentication and task scheduling system.",
     image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=800&q=80",
-    tags: ["JavaScript", "HTML", "CSS"],
+    tags: ["JavaScript", "HTML", "CSS", "Next.js","Node.js", "Express.js", "Mongodb", "Postgres", "REST Api"],
     githubLink: "https://github.com/Yaya1200/planner",
   },
   {
@@ -94,7 +94,7 @@ export function Projects() {
     description:
       "A psychology-focused platform where individuals who feel lonely can talk, share ideas, express emotions, and receive supportive responses in a safe environment.",
     image: "https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&w=800&q=80",
-    tags: ["JavaScript", "HTML", "CSS"],
+    tags: ["JavaScript", "HTML", "CSS", "React.js","Node.js", "Express.js", "Mongodb", "Postgres", "REST Api"],
     githubLink: "https://github.com/Yaya1200/Health-Care-Project",
   },
 ];
