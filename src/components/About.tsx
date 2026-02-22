@@ -101,7 +101,7 @@ export function About() {
             <div className="flex gap-4">
               <div className="text-center">
                 <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                  2+
+                  1+
                 </div>
                 <div className="text-sm text-slate-400">Years Experience</div>
               </div>
@@ -113,7 +113,7 @@ export function About() {
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                  20+
+                  10+
                 </div>
                 <div className="text-sm text-slate-400">Happy Clients</div>
               </div>
