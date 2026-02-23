@@ -123,7 +123,7 @@ export function Hero(): JSX.Element {
           >
             {[
               { Icon: Github, href: "https://github.com/Yaya1200" },
-              { Icon: Linkedin, href: "www.linkedin.com/in/yared-gebre-201595246" },
+              { Icon: Linkedin, href: "https://linkedin.com/in/yared-gebre-201595246" },
         
             ].map(({ Icon, href }, index) => (
               <motion.a
