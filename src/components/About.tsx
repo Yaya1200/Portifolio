@@ -64,7 +64,7 @@ export function About() {
           >
             <div className="relative inline-block group" style={{marginLeft:"100px"}}>
               <img
-                src="./yaredImage.jpg"
+                src="./yaredimage.png"
                 className="w-24 h-24 object-cover rounded-2xl "
                 style={{
                   width:"400px",
@@ -101,7 +101,7 @@ export function About() {
             <div className="flex gap-4">
               <div className="text-center">
                 <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                  1+
+                  3+
                 </div>
                 <div className="text-sm text-slate-400">Years Experience</div>
               </div>
