@@ -8,26 +8,6 @@ export function Projects() {
 
  const projects = [
   {
-    title: "Full Stack Note Taking App",
-    category: "fullstack",
-    description:
-      "Secure note-taking system with CRUD functionality and user-based data management.",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
-    tags: ["JavaScript", "HTML", "CSS", "Node.js", "Express.js", "Mongodb", "Postgres", "REST Api"],
-    githubLink: "https://github.com/Yaya1200/My-Full-Stack-App",
-    liveLink: "https://my-full-stack-app-nu.vercel.app/",
-  },
-  {
-    title: "Full Stack Blog Website",
-    category: "fullstack",
-    description:
-      "Blog platform with user authentication, post creation, editing and dynamic content rendering.",
-    image: "https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=800&q=80",
-    tags: ["JavaScript", "HTML", "CSS", "Node.js", "Express.js", "Mongodb", "Postgres", "REST Api"],
-    githubLink: "https://github.com/Yaya1200/my-blog-with-next",
-    liveLink: "https://my-blog-with-next-w61v.vercel.app/",
-  },
-  {
     title: "Planner App",
     category: "fullstack",
     description:
@@ -46,6 +26,26 @@ export function Projects() {
     tags: ["JavaScript", "HTML", "CSS", "React.js", "Node.js", "Express.js", "Mongodb", "Postgres", "REST Api"],
     githubLink: "https://github.com/Yaya1200/Health-Care-Project",
     liveLink: "https://health-care-project-dun.vercel.app/",
+  },
+  {
+    title: "Full Stack Note Taking App",
+    category: "fullstack",
+    description:
+      "Secure note-taking system with CRUD functionality and user-based data management.",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
+    tags: ["JavaScript", "HTML", "CSS", "Node.js", "Express.js", "Mongodb", "Postgres", "REST Api"],
+    githubLink: "https://github.com/Yaya1200/My-Full-Stack-App",
+    liveLink: "https://my-full-stack-app-nu.vercel.app/",
+  },
+  {
+    title: "Full Stack Blog Website",
+    category: "fullstack",
+    description:
+      "Blog platform with user authentication, post creation, editing and dynamic content rendering.",
+    image: "https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=800&q=80",
+    tags: ["JavaScript", "HTML", "CSS", "Node.js", "Express.js", "Mongodb", "Postgres", "REST Api"],
+    githubLink: "https://github.com/Yaya1200/my-blog-with-next",
+    liveLink: "https://my-blog-with-next-w61v.vercel.app/",
   },
   {
     title: "Todo List App",
