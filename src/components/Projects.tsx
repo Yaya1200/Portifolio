@@ -8,13 +8,14 @@ export function Projects() {
 
  const projects = [
   {
-    title: "Yared Store (Amazon-Style E-Commerce)",
+    title: "Full Stack Note Taking App",
     category: "fullstack",
     description:
-      "Full-stack e-commerce platform with authentication, product management, cart system and order processing.",
-    image: "https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=800&q=80",
-    tags: ["JavaScript", "HTML", "CSS", "Node.js"],
-    githubLink: "https://github.com/Yaya1200/Yared-Store",
+      "Secure note-taking system with CRUD functionality and user-based data management.",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
+    tags: ["JavaScript", "HTML", "CSS", "Node.js", "Express.js", "Mongodb", "Postgres", "REST Api"],
+    githubLink: "https://github.com/Yaya1200/My-Full-Stack-App",
+    liveLink: "https://my-full-stack-app-nu.vercel.app/",
   },
   {
     title: "Full Stack Blog Website",
@@ -24,51 +25,27 @@ export function Projects() {
     image: "https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=800&q=80",
     tags: ["JavaScript", "HTML", "CSS", "Node.js", "Express.js", "Mongodb", "Postgres", "REST Api"],
     githubLink: "https://github.com/Yaya1200/my-blog-with-next",
+    liveLink: "https://my-blog-with-next-w61v.vercel.app/",
   },
   {
-    title: "Full Stack Note Taking App",
+    title: "Planner App",
     category: "fullstack",
     description:
-      "Secure note-taking system with CRUD functionality and user-based data management.",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
-    tags: ["JavaScript", "HTML", "CSS", "Node.js", "Express.js", "Mongodb", "Postgres", "REST Api"],
-    githubLink: "https://github.com/Yaya1200/My-Full-Stack-App",
+      "Productivity planner application with authentication and task scheduling system.",
+    image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=800&q=80",
+    tags: ["JavaScript", "HTML", "CSS", "Next.js", "Node.js", "Express.js", "Mongodb", "Postgres", "REST Api"],
+    githubLink: "https://github.com/Yaya1200/planner",
+    liveLink: "https://planner-teal-iota.vercel.app/",
   },
   {
-    title: "Mini E-Commerce App",
+    title: "Mental Health Support Platform",
     category: "fullstack",
     description:
-      "Lightweight online store with cart functionality and product listing.",
-    image: "https://plus.unsplash.com/premium_photo-1670863088251-500151f2117b?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    tags: ["JavaScript", "HTML", "CSS"],
-    githubLink: "https://github.com/Yaya1200/My-Mini-E-commerce-App",
-  },
-  {
-    title: "Weather App",
-    category: "web",
-    description:
-      "Real-time weather application using external API integration with dynamic UI updates.",
-    image: "https://images.unsplash.com/photo-1614480633894-f3b7f4bb0e76?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    tags:["JavaScript", "HTML", "CSS", "Node.js", "Express.js", "Mongodb", "Postgres", "REST Api"],
-    githubLink: "https://github.com/Yaya1200/Wheather-App",
-  },
-  {
-    title: "Coffee Shop Website",
-    category: "web",
-    description:
-      "Modern responsive coffee shop landing page with animations and interactive design.",
-    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80",
-    tags: ["HTML", "CSS", "JavaScript"],
-    githubLink: "https://github.com/Yaya1200/Coffee-Web",
-  },
-  {
-    title: "World Explorer App",
-    category: "web",
-    description:
-      "Country exploration web app using REST APIs to display global data dynamically.",
-    image: "https://images.unsplash.com/photo-1706823871410-ed8b01faef7e?q=80&w=1229&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    tags: ["JavaScript", "REST API"],
-    githubLink: "https://github.com/Yaya1200/World-Explorer-App",
+      "A psychology-focused platform where individuals who feel lonely can talk, share ideas, express emotions, and receive supportive responses in a safe environment.",
+    image: "https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&w=800&q=80",
+    tags: ["JavaScript", "HTML", "CSS", "React.js", "Node.js", "Express.js", "Mongodb", "Postgres", "REST Api"],
+    githubLink: "https://github.com/Yaya1200/Health-Care-Project",
+    liveLink: "https://health-care-project-dun.vercel.app/",
   },
   {
     title: "Todo List App",
@@ -78,24 +55,17 @@ export function Projects() {
     image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800&q=80",
     tags: ["JavaScript", "HTML", "CSS", "Node.js", "Express.js", "Mongodb", "Postgres", "REST Api"],
     githubLink: "https://github.com/Yaya1200/todo-list",
+    liveLink: "https://simple1-todolist.netlify.app/",
   },
   {
-    title: "Planner App (Upcoming)",
+    title: "Mini E-Commerce App",
     category: "fullstack",
     description:
-      "Productivity planner application with authentication and task scheduling system.",
-    image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=800&q=80",
-    tags: ["JavaScript", "HTML", "CSS", "Next.js","Node.js", "Express.js", "Mongodb", "Postgres", "REST Api"],
-    githubLink: "https://github.com/Yaya1200/planner",
-  },
-  {
-    title: "Mental Health Support Platform (Upcoming)",
-    category: "fullstack",
-    description:
-      "A psychology-focused platform where individuals who feel lonely can talk, share ideas, express emotions, and receive supportive responses in a safe environment.",
-    image: "https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&w=800&q=80",
-    tags: ["JavaScript", "HTML", "CSS", "React.js","Node.js", "Express.js", "Mongodb", "Postgres", "REST Api"],
-    githubLink: "https://github.com/Yaya1200/Health-Care-Project",
+      "Lightweight online store with cart functionality and product listing.",
+    image: "https://plus.unsplash.com/premium_photo-1670863088251-500151f2117b?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    tags: ["JavaScript", "HTML", "CSS"],
+    githubLink: "https://github.com/Yaya1200/My-Mini-E-commerce-App",
+    liveLink: "https://my-mini-e-commerce-app.vercel.app/",
   },
 ];
 
@@ -185,10 +155,24 @@ export function Projects() {
 
               {/* Hover Overlay */}
               <div className="absolute inset-0 bg-slate-900/90 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-               
+                {project.liveLink && (
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="p-3 bg-slate-700 rounded-full text-white hover:bg-slate-600 transition-colors"
+                    aria-label={`Open live demo for ${project.title}`}
+                  >
+                    <ExternalLink size={20} />
+                  </a>
+                )}
+                
                 <a
                   href={project.githubLink}
+                  target="_blank"
+                  rel="noreferrer"
                   className="p-3 bg-slate-700 rounded-full text-white hover:bg-slate-600 transition-colors"
+                  aria-label={`Open GitHub for ${project.title}`}
                 >
                   <Github size={20} />
                 </a>
