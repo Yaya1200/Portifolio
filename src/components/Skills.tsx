@@ -20,6 +20,7 @@ export function Skills() {
         { name: 'Node.js / Express'},
         { name: 'PostgreSQL'},
         { name: 'MongoDB' },
+        { name: 'Supabase' },
       ],
     },
     {
