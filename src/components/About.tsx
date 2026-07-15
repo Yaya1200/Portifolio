@@ -64,7 +64,7 @@ export function About() {
           >
             <div className="relative inline-block group" style={{marginLeft:"100px"}}>
               <img
-                src="./yaredimage.png"
+                src="./yaredimage.jpg"
                 className="w-24 h-24 object-cover rounded-2xl "
                 style={{
                   width:"400px",
