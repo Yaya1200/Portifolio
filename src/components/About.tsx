@@ -54,29 +54,18 @@ export function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative"
+            className="relative flex justify-center"
           >
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="relative inline-block group" style={{marginLeft:"100px"}}>
+            <div className="relative inline-block group">
               <img
                 src="./yaredimage.jpg"
-                className="w-24 h-24 object-cover rounded-2xl "
-                style={{
-                  width:"400px",
-                  height:"350px",
-                  
-                }}
+                className="w-72 h-72 md:w-80 md:h-80 object-cover object-top rounded-2xl"
+                className="w-80 h-[26rem] md:w-96 md:h-[26rem] object-cover object-top rounded-2xl"
                 alt="Yared"
               />
 
               <div className="absolute inset-0 border-2 border-cyan-500/50 rounded-2xl group-hover:border-cyan-400 transition-colors" />
             </div>
-          </motion.div>
           </motion.div>
 
           <motion.div
